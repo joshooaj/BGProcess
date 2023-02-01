@@ -1,7 +1,7 @@
 ---
 external help file: BGProcess-help.xml
 Module Name: BGProcess
-online version:
+online version: https://www.joshooaj.com/BGProcess/Functions/Stop-BGProcess/
 schema: 2.0.0
 ---
 
@@ -112,3 +112,5 @@ This cmdlet accepts a BGProcess object from the pipeline.
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Help](https://www.joshooaj.com/BGProcess/Functions/Stop-BGProcess/)

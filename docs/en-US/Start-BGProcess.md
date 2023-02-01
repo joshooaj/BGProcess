@@ -1,7 +1,7 @@
 ---
 external help file: BGProcess-help.xml
 Module Name: BGProcess
-online version:
+online version: https://www.joshooaj.com/BGProcess/Functions/Start-BGProcess/
 schema: 2.0.0
 ---
 
@@ -137,3 +137,5 @@ You can't pipe objects to this cmdlet.
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Help](https://www.joshooaj.com/BGProcess/Functions/Start-BGProcess/)
