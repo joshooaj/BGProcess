@@ -1,6 +1,6 @@
 # Welcome
-[![CI](https://github.com/joshooaj/BGProcess/actions/workflows/CI.yml/badge.svg)](https://github.com/joshooaj/BGProcess/actions/workflows/CI.yml)
-[![pages-build-deployment](https://github.com/joshooaj/BGProcess/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/joshooaj/BGProcess/actions/workflows/pages/pages-build-deployment)
+[![Publish](https://github.com/joshooaj/BGProcess/actions/workflows/Publish.yml/badge.svg)](https://github.com/joshooaj/BGProcess/actions/workflows/Publish.yml)
+[![PublishDocs](https://github.com/joshooaj/BGProcess/actions/workflows/PublishDocs.yml/badge.svg)](https://github.com/joshooaj/BGProcess/actions/workflows/PublishDocs.yml)
 ## Introduction
 
 It can be complicated to read from the StandardOutput or StandardError streams

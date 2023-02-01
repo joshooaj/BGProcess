@@ -1,6 +1,7 @@
 site_name: BGProcess
 repo_url: https://github.com/joshooaj/BGProcess
 docs_dir: mkdocs
+site_url: https://www.joshooaj.com/BGProcess/
 site_dir: Output/site
 site_description: "Documentation for the BGProcess PowerShell module."
 copyright: Copyright &copy; 2023 Joshua Hendricks. All rights reserved.
