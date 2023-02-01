@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
     steps:
@@ -14,11 +14,10 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - name: Build module and update docs
-        shell: pwsh
-        run: .\build.ps1 Docs -Bootstrap
       - run: sudo apt-get install pngquant
-      - run: pip install git+https://joshooaj:${GH_TOKEN}@github.com/joshooaj/mkdocs-material-insiders.git@custom
-      - run: mkdocs gh-deploy --force
+      - run: pip install git+https://joshooaj:${{ secrets.MKDOCS_MATERIAL_INSIDERS }}@github.com/joshooaj/mkdocs-material-insiders.git@custom
+      - name: Deploy Docs
+        shell: pwsh
+        run: .\build.ps1 DeployDocs -Bootstrap
 env:
-  GH_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDERS }}
+  PSGALLERY_API_KEY: ${{ secrets.PSGALLERY_TOKEN }}
