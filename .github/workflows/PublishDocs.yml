@@ -1,4 +1,4 @@
-name: CI
+name: PublishDocs
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 jobs:
-  publish:
+  PublishDocs:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
     steps:
@@ -21,3 +21,4 @@ jobs:
         run: .\build.ps1 DeployDocs -Bootstrap
 env:
   PSGALLERY_API_KEY: ${{ secrets.PSGALLERY_TOKEN }}
+  CI: true

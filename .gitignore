@@ -2,3 +2,4 @@
 Output/
 mkdocs/
 .cache/
+tests/out/testResults.xml
