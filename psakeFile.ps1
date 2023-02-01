@@ -17,9 +17,6 @@ task Docs {
     $indexSrc = Join-Path $psake.build_script_dir 'README.md'
     $indexDst = Join-Path $psake.build_script_dir 'mkdocs/index.md'
     $cachePath = Join-Path $psake.build_script_dir '.cache'
-    if (Test-Path $cachePath) {
-        Remove-Item $cachePath -Recurse
-    }
     if (Test-Path $docsDst) {
         Remove-Item $docsDst -Recurse
     }
