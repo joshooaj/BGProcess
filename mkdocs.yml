@@ -1,4 +1,54 @@
-site_name: foo
-repo_url: foo
-theme: readthedocs
+site_name: BGProcess
+repo_url: https://github.com/joshooaj/BGProcess
+docs_dir: mkdocs
+site_dir: Output/site
+site_description: "Documentation for the BGProcess PowerShell module."
+copyright: Copyright &copy; 2023 Joshua Hendricks. All rights reserved.
+remote_branch: mkdocs
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Open Sans
+  features:
+    - content.code.annotate
+    - header.autohide
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
 
+plugins:
+  - search
+  - social
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path:
+      - mkdocs
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
