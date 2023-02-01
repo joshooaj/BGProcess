@@ -23,18 +23,21 @@ automate a stubborn command-line tool that is not automation-ready.
 
 ## Installation
 
-If/when the module is published to the [PSGallery](https://www.powershellgallery.com)
-then you would be able to install it using `Install-Module BGProcess`.
+The module can be installed from [PowerShell Gallery](https://www.powershellgallery.com/packages/BGProcess)
+by running the command `Install-Module -Name BGProcess`.
 
-Until then, you can download the ZIP file from the [Releases](https://github.com/joshooaj/BGProcess/releases)
-section, and extract it to one of your PSModulePath's. Type `$env:PSModulePath -split ';'`
-in a PowerShell terminal to see where PowerShell looks for modules on your
-system when auto-importing or importing modules by name.
+To install manually, you can download latest `BGProcess.zip` file from the
+[Releases](https://github.com/joshooaj/BGProcess/releases) section, and extract
+it to one of your PSModulePath's.
 
-When extracted, the path to `BGProcess.psd1` should be similar to...
+Type `$env:PSModulePath -split ';'` in a PowerShell terminal to see where
+PowerShell looks for modules on your system.
 
-- Current user: C:\Users\<username>\Documents\WindowsPowerShell\Modules\BGProcess\0.1.0\BGProcess.psd1
-- All users: C:\Program Files\WindowsPowerShell\Modules\BGProcess\0.1.0\BGProcess.psd1
+When extracted to a standard module path, the full path to `BGProcess.psd1`
+should be similar to...
+
+- __Current user:__ C:\Users\<username>\Documents\WindowsPowerShell\Modules\BGProcess\0.1.0\BGProcess.psd1
+- __All users:__ C:\Program Files\WindowsPowerShell\Modules\BGProcess\0.1.0\BGProcess.psd1
 
 ## Usage
 
