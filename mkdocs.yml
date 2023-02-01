@@ -33,6 +33,8 @@ theme:
 plugins:
   - search
   - social
+  - optimize:
+      enabled: !ENV [CI, false]
 
 markdown_extensions:
   - attr_list
