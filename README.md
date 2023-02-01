@@ -1,5 +1,6 @@
 # Welcome
-
+[![CI](https://github.com/joshooaj/BGProcess/actions/workflows/CI.yml/badge.svg)](https://github.com/joshooaj/BGProcess/actions/workflows/CI.yml)
+[![pages-build-deployment](https://github.com/joshooaj/BGProcess/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/joshooaj/BGProcess/actions/workflows/pages/pages-build-deployment)
 ## Introduction
 
 It can be complicated to read from the StandardOutput or StandardError streams
