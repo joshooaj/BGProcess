@@ -15,7 +15,7 @@
             Tags = @('Process', 'STDIO', 'StandardOutput', 'StandardError', 'async', 'runspaces')
             LicenseUri = 'https://github.com/joshooaj/BGProcess/blob/main/LICENSE'
             ProjectUri = 'https://github.com/joshooaj/BGProcess'
-            IconUri    = 'https://www.joshooaj.com/BGProcess/images/joshooaj.png'
+            IconUri    = 'https://www.joshooaj.com/BGProcess/images/joshooaj.jpg'
             ReleaseNotes = 'See the GitHub repository at https://github.com/joshooaj/BGProcess.'
         }
     }
