@@ -36,7 +36,8 @@ task StageDocs -depends Test {
     $imgDst = Join-Path $psake.build_script_dir 'mkdocs/images'
     $indexSrc = Join-Path $psake.build_script_dir 'README.md'
     $indexDst = Join-Path $psake.build_script_dir 'mkdocs/index.md'
-    $changelogSrc
+    $changelogSrc = Join-Path $psake.build_script_dir 'CHANGELOG.md'
+    $changelogDst = Join-Path $psake.build_script_dir 'mkdocs/CHANGELOG.md'
 
     if (Test-Path $docsDst) {
         Remove-Item $docsDst -Recurse
@@ -44,4 +45,5 @@ task StageDocs -depends Test {
     Copy-Item -Path $docsSrc -Destination $docsDst -Recurse
     Copy-Item -Path $imgSrc -Destination $imgDst -Recurse -Force
     Copy-Item -Path $indexSrc -Destination $indexDst -Force
+    Copy-Item -Path $changelogSrc -Destination $changelogDst -Force
 }
